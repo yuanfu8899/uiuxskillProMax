@@ -1,0 +1,2469 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Pro 圖示庫 (Icons)</title>
+    <!-- Lucide Icons Script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --primary-color: #3b82f6;
+        }
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p.subtitle {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .icon-preview {
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+            padding: 1rem;
+            background-color: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+        }
+        .icon-preview i {
+            width: 48px;
+            height: 48px;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+            color: var(--text-color);
+        }
+        .category-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background-color: #eff6ff;
+            color: var(--primary-color);
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .info-row {
+            width: 100%;
+            text-align: left;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 0.75rem;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #64748b;
+            display: block;
+            margin-bottom: 0.25rem;
+            font-size: 0.8rem;
+        }
+        .info-value {
+            color: var(--text-color);
+            word-break: break-word;
+        }
+        code {
+            background-color: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 0.25rem;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        /* Navigation Styles */
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #64748b;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+        .nav-link:hover {
+            background-color: #e2e8f0;
+            color: var(--text-color);
+        }
+        .nav-link.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="uiuxpro_styles.html" class="nav-link">風格庫 (Styles)</a>
+            <a href="uiuxpro_colors.html" class="nav-link">配色庫 (Colors)</a>
+            <a href="uiuxpro_icons.html" class="nav-link active">圖示庫 (Icons)</a>
+        </nav>
+        <h1>UI/UX Pro 圖示庫 (Icons)</h1>
+        <p class="subtitle">基於 Lucide React 的精選圖示集合</p>
+    </header>
+    <div class="grid">
+
+        <div class="card">
+            <span class="category-badge">Navigation</span>
+            <div class="icon-preview">
+                <i data-lucide="menu" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">menu</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Mobile navigation drawer toggle sidebar</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Menu } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Menu /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Navigation</span>
+            <div class="icon-preview">
+                <i data-lucide="arrow-left" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">arrow-left</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Back button breadcrumb navigation</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { ArrowLeft } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;ArrowLeft /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Navigation</span>
+            <div class="icon-preview">
+                <i data-lucide="arrow-right" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">arrow-right</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Forward button next step CTA</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { ArrowRight } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;ArrowRight /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Navigation</span>
+            <div class="icon-preview">
+                <i data-lucide="chevron-down" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">chevron-down</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Dropdown toggle accordion header</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { ChevronDown } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;ChevronDown /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Navigation</span>
+            <div class="icon-preview">
+                <i data-lucide="chevron-up" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">chevron-up</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Accordion collapse minimize</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { ChevronUp } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;ChevronUp /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Navigation</span>
+            <div class="icon-preview">
+                <i data-lucide="home" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">home</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Home navigation main page</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Home } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Home /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Navigation</span>
+            <div class="icon-preview">
+                <i data-lucide="x" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">x</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Modal close dismiss button</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { X } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;X /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Navigation</span>
+            <div class="icon-preview">
+                <i data-lucide="external-link" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">external-link</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">External link indicator</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { ExternalLink } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;ExternalLink /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="plus" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">plus</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Add button create new item</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Plus } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Plus /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="minus" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">minus</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Remove item quantity decrease</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Minus } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Minus /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="trash-2" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">trash-2</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Delete action destructive</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Trash2 } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Trash2 /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="edit" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">edit</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Edit button modify content</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Edit } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Edit /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="save" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">save</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Save button persist changes</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Save } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Save /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="download" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">download</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Download file export</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Download } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Download /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="upload" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">upload</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Upload file import</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Upload } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Upload /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="copy" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">copy</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Copy to clipboard</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Copy } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Copy /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="share" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">share</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Share button social</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Share } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Share /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="search" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">search</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Search input bar</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Search } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Search /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="filter" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">filter</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Filter dropdown sort</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Filter } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Filter /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Action</span>
+            <div class="icon-preview">
+                <i data-lucide="settings" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">settings</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Settings page configuration</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Settings } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Settings /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Status</span>
+            <div class="icon-preview">
+                <i data-lucide="check" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">check</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Success state checkmark</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Check } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Check /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Status</span>
+            <div class="icon-preview">
+                <i data-lucide="check-circle" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">check-circle</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Success badge verified</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { CheckCircle } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;CheckCircle /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Status</span>
+            <div class="icon-preview">
+                <i data-lucide="x-circle" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">x-circle</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Error state failed</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { XCircle } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;XCircle /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Status</span>
+            <div class="icon-preview">
+                <i data-lucide="alert-triangle" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">alert-triangle</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Warning message caution</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { AlertTriangle } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;AlertTriangle /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Status</span>
+            <div class="icon-preview">
+                <i data-lucide="alert-circle" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">alert-circle</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Info notice alert</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { AlertCircle } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;AlertCircle /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Status</span>
+            <div class="icon-preview">
+                <i data-lucide="info" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">info</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Information tooltip help</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Info } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Info /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Status</span>
+            <div class="icon-preview">
+                <i data-lucide="loader" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">loader</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Loading state spinner</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Loader } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Loader className=&quot;animate-spin&quot; /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Status</span>
+            <div class="icon-preview">
+                <i data-lucide="clock" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">clock</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Pending time schedule</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Clock } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Clock /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Communication</span>
+            <div class="icon-preview">
+                <i data-lucide="mail" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">mail</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Email contact inbox</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Mail } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Mail /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Communication</span>
+            <div class="icon-preview">
+                <i data-lucide="message-circle" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">message-circle</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Chat comment message</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { MessageCircle } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;MessageCircle /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Communication</span>
+            <div class="icon-preview">
+                <i data-lucide="phone" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">phone</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Phone contact call</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Phone } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Phone /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Communication</span>
+            <div class="icon-preview">
+                <i data-lucide="send" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">send</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Send message submit</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Send } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Send /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Communication</span>
+            <div class="icon-preview">
+                <i data-lucide="bell" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">bell</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Notification bell alert</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Bell } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Bell /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">User</span>
+            <div class="icon-preview">
+                <i data-lucide="user" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">user</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">User profile account</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { User } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;User /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">User</span>
+            <div class="icon-preview">
+                <i data-lucide="users" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">users</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Team group members</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Users } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Users /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">User</span>
+            <div class="icon-preview">
+                <i data-lucide="user-plus" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">user-plus</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Add user invite</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { UserPlus } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;UserPlus /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">User</span>
+            <div class="icon-preview">
+                <i data-lucide="log-in" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">log-in</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Login signin</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { LogIn } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;LogIn /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">User</span>
+            <div class="icon-preview">
+                <i data-lucide="log-out" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">log-out</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Logout signout</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { LogOut } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;LogOut /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Media</span>
+            <div class="icon-preview">
+                <i data-lucide="image" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">image</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Image photo gallery</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Image } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Image /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Media</span>
+            <div class="icon-preview">
+                <i data-lucide="video" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">video</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Video player media</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Video } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Video /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Media</span>
+            <div class="icon-preview">
+                <i data-lucide="play" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">play</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Play button video audio</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Play } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Play /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Media</span>
+            <div class="icon-preview">
+                <i data-lucide="pause" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">pause</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Pause button media</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Pause } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Pause /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Media</span>
+            <div class="icon-preview">
+                <i data-lucide="volume-2" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">volume-2</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Volume audio sound</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Volume2 } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Volume2 /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Media</span>
+            <div class="icon-preview">
+                <i data-lucide="mic" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">mic</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Microphone voice record</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Mic } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Mic /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Media</span>
+            <div class="icon-preview">
+                <i data-lucide="camera" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">camera</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Camera photo capture</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Camera } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Camera /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Commerce</span>
+            <div class="icon-preview">
+                <i data-lucide="shopping-cart" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">shopping-cart</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Shopping cart e-commerce</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { ShoppingCart } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;ShoppingCart /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Commerce</span>
+            <div class="icon-preview">
+                <i data-lucide="shopping-bag" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">shopping-bag</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Shopping bag purchase</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { ShoppingBag } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;ShoppingBag /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Commerce</span>
+            <div class="icon-preview">
+                <i data-lucide="credit-card" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">credit-card</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Payment credit card</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { CreditCard } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;CreditCard /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Commerce</span>
+            <div class="icon-preview">
+                <i data-lucide="dollar-sign" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">dollar-sign</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Price money currency</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { DollarSign } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;DollarSign /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Commerce</span>
+            <div class="icon-preview">
+                <i data-lucide="tag" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">tag</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Price tag label</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Tag } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Tag /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Commerce</span>
+            <div class="icon-preview">
+                <i data-lucide="gift" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">gift</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Gift reward offer</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Gift } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Gift /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Commerce</span>
+            <div class="icon-preview">
+                <i data-lucide="percent" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">percent</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Discount percentage sale</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Percent } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Percent /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Data</span>
+            <div class="icon-preview">
+                <i data-lucide="bar-chart" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">bar-chart</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Bar chart analytics</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { BarChart } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;BarChart /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Data</span>
+            <div class="icon-preview">
+                <i data-lucide="pie-chart" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">pie-chart</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Pie chart distribution</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { PieChart } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;PieChart /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Data</span>
+            <div class="icon-preview">
+                <i data-lucide="trending-up" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">trending-up</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Growth trend positive</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { TrendingUp } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;TrendingUp /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Data</span>
+            <div class="icon-preview">
+                <i data-lucide="trending-down" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">trending-down</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Decline trend negative</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { TrendingDown } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;TrendingDown /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Data</span>
+            <div class="icon-preview">
+                <i data-lucide="activity" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">activity</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Activity monitor pulse</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Activity } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Activity /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Data</span>
+            <div class="icon-preview">
+                <i data-lucide="database" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">database</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Database storage</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Database } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Database /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Files</span>
+            <div class="icon-preview">
+                <i data-lucide="file" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">file</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">File document</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { File } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;File /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Files</span>
+            <div class="icon-preview">
+                <i data-lucide="file-text" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">file-text</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Text document article</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { FileText } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;FileText /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Files</span>
+            <div class="icon-preview">
+                <i data-lucide="folder" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">folder</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Folder directory</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Folder } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Folder /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Files</span>
+            <div class="icon-preview">
+                <i data-lucide="folder-open" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">folder-open</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Open folder browse</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { FolderOpen } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;FolderOpen /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Files</span>
+            <div class="icon-preview">
+                <i data-lucide="paperclip" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">paperclip</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Attachment paperclip</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Paperclip } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Paperclip /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Files</span>
+            <div class="icon-preview">
+                <i data-lucide="link" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">link</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Link URL hyperlink</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Link } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Link /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Files</span>
+            <div class="icon-preview">
+                <i data-lucide="clipboard" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">clipboard</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Clipboard paste</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Clipboard } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Clipboard /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Layout</span>
+            <div class="icon-preview">
+                <i data-lucide="grid" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">grid</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Grid layout gallery</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Grid } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Grid /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Layout</span>
+            <div class="icon-preview">
+                <i data-lucide="list" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">list</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">List view rows</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { List } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;List /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Layout</span>
+            <div class="icon-preview">
+                <i data-lucide="columns" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">columns</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Column layout split</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Columns } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Columns /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Layout</span>
+            <div class="icon-preview">
+                <i data-lucide="maximize" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">maximize</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Fullscreen maximize</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Maximize } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Maximize /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Layout</span>
+            <div class="icon-preview">
+                <i data-lucide="minimize" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">minimize</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Minimize reduce</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Minimize } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Minimize /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Layout</span>
+            <div class="icon-preview">
+                <i data-lucide="sidebar" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">sidebar</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Sidebar panel</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Sidebar } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Sidebar /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Social</span>
+            <div class="icon-preview">
+                <i data-lucide="heart" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">heart</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Like favorite love</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Heart } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Heart /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Social</span>
+            <div class="icon-preview">
+                <i data-lucide="star" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">star</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Star rating favorite</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Star } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Star /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Social</span>
+            <div class="icon-preview">
+                <i data-lucide="thumbs-up" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">thumbs-up</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Like approve thumb</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { ThumbsUp } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;ThumbsUp /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Social</span>
+            <div class="icon-preview">
+                <i data-lucide="thumbs-down" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">thumbs-down</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Dislike disapprove</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { ThumbsDown } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;ThumbsDown /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Social</span>
+            <div class="icon-preview">
+                <i data-lucide="bookmark" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">bookmark</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Bookmark save</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Bookmark } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Bookmark /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Social</span>
+            <div class="icon-preview">
+                <i data-lucide="flag" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">flag</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Flag report</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Flag } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Flag /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Device</span>
+            <div class="icon-preview">
+                <i data-lucide="smartphone" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">smartphone</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Mobile smartphone</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Smartphone } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Smartphone /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Device</span>
+            <div class="icon-preview">
+                <i data-lucide="tablet" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">tablet</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Tablet device</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Tablet } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Tablet /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Device</span>
+            <div class="icon-preview">
+                <i data-lucide="monitor" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">monitor</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Desktop monitor</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Monitor } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Monitor /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Device</span>
+            <div class="icon-preview">
+                <i data-lucide="laptop" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">laptop</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Laptop computer</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Laptop } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Laptop /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Device</span>
+            <div class="icon-preview">
+                <i data-lucide="printer" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">printer</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Printer print</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Printer } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Printer /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Security</span>
+            <div class="icon-preview">
+                <i data-lucide="lock" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">lock</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Lock secure</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Lock } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Lock /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Security</span>
+            <div class="icon-preview">
+                <i data-lucide="unlock" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">unlock</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Unlock open</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Unlock } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Unlock /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Security</span>
+            <div class="icon-preview">
+                <i data-lucide="shield" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">shield</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Shield protection</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Shield } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Shield /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Security</span>
+            <div class="icon-preview">
+                <i data-lucide="key" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">key</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Key password</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Key } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Key /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Security</span>
+            <div class="icon-preview">
+                <i data-lucide="eye" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">eye</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Show password view</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Eye } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Eye /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Security</span>
+            <div class="icon-preview">
+                <i data-lucide="eye-off" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">eye-off</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Hide password</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { EyeOff } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;EyeOff /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Location</span>
+            <div class="icon-preview">
+                <i data-lucide="map-pin" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">map-pin</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Location pin marker</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { MapPin } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;MapPin /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Location</span>
+            <div class="icon-preview">
+                <i data-lucide="map" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">map</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Map directions</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Map } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Map /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Location</span>
+            <div class="icon-preview">
+                <i data-lucide="navigation" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">navigation</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Navigation compass</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Navigation } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Navigation /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Location</span>
+            <div class="icon-preview">
+                <i data-lucide="globe" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">globe</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Globe world</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Globe } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Globe /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Time</span>
+            <div class="icon-preview">
+                <i data-lucide="calendar" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">calendar</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Calendar date</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Calendar } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Calendar /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Time</span>
+            <div class="icon-preview">
+                <i data-lucide="refresh-cw" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">refresh-cw</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Refresh reload</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { RefreshCw } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;RefreshCw /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Time</span>
+            <div class="icon-preview">
+                <i data-lucide="rotate-ccw" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">rotate-ccw</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Undo revert</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { RotateCcw } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;RotateCcw /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Time</span>
+            <div class="icon-preview">
+                <i data-lucide="rotate-cw" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">rotate-cw</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Redo forward</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { RotateCw } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;RotateCw /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Development</span>
+            <div class="icon-preview">
+                <i data-lucide="code" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">code</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Code development</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Code } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Code /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Development</span>
+            <div class="icon-preview">
+                <i data-lucide="terminal" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">terminal</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Terminal console</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Terminal } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Terminal /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Development</span>
+            <div class="icon-preview">
+                <i data-lucide="git-branch" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">git-branch</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">Git branch</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { GitBranch } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;GitBranch /&gt;</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="category-badge">Development</span>
+            <div class="icon-preview">
+                <i data-lucide="github" width="40" height="40"></i>
+            </div>
+            <h2 class="card-title">github</h2>
+            
+            <div class="info-row">
+                <span class="info-label">適用於 (Best For)</span>
+                <div class="info-value">GitHub repository</div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">React 匯入 (Import)</span>
+                <code>import { Github } from &#x27;lucide-react&#x27;</code>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">JSX 用法 (Usage)</span>
+                <code>&lt;Github /&gt;</code>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

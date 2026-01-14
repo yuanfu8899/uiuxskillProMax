@@ -1,0 +1,317 @@
+:root {
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+    --primary-color: #3b82f6;
+    --tag-bg: #f1f5f9;
+    --tag-text: #475569;
+}
+body {
+    font-family: "PingFang TC", "Microsoft JhengHei", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.6;
+}
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Navigation Styles */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.nav-link {
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+.nav-link:hover {
+    background-color: #e2e8f0;
+    color: var(--text-color);
+}
+.nav-link.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+p.subtitle {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 2rem;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+.style-type {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.2;
+}
+.card-title .zh-title {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #64748b;
+    margin-top: 0.25rem;
+}
+.keywords {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+.preview-container {
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 300px;
+    background: #f1f5f9;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.section-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #94a3b8;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+}
+.content-block {
+    font-size: 0.95rem;
+    color: #334155;
+}
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.metric {
+    display: flex;
+    flex-direction: column;
+}
+.metric-label {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-weight: 600;
+}
+.metric-value {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #334155;
+}
+.usage-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed var(--border-color);
+}
+.usage-block h4 {
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.good-use { color: #16a34a; }
+.bad-use { color: #dc2626; }
+.usage-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #475569;
+}
+.fullscreen-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+.fullscreen-link:hover {
+    text-decoration: underline;
+}
+
+/* Filter Styles */
+.filter-container {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.filter-label {
+    font-size: 1rem;
+    color: #64748b;
+    font-weight: 600;
+}
+.style-filter {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    cursor: pointer;
+    outline: none;
+    min-width: 200px;
+}
+.style-filter:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+.page-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+.page-btn:hover:not(.disabled) {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.page-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f1f5f9;
+}
+.page-info {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* Color Page Specific Styles */
+.colors-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-grow: 1;
+}
+.color-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+.color-info {
+    flex-grow: 1;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+.color-name {
+    display: block;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-bottom: 0.1rem;
+}
+.notes {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    color: #475569;
+}
+.notes-label {
+    font-weight: 600;
+    color: #1e293b;
+    margin-right: 0.5rem;
+}
+.index-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card {
+    position: relative; /* For index badge positioning */
+}
