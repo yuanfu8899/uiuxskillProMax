@@ -21,78 +21,78 @@
 
 ## 頁面導航 (Page Navigation)
 
-直接點擊下方連結預覽效果：
+直接點擊下方連結預覽 GitHub Pages 效果：
 
-| 頁面 | 描述 | 連結 |
+| 頁面 | 描述 | 預覽連結 |
 |------|------|------|
-| **首頁** | 專案入口，總覽所有資源 | [index.html](./index.html) |
-| **風格庫** | 58 種 UI 風格詳細展示 | [uiuxpro_styles.html](./uiuxpro_styles.html) |
-| **配色庫** | 96+ 組產業配色方案 | [uiuxpro_colors.html](./uiuxpro_colors.html) |
-| **圖示庫** | Lucide 圖示最佳實踐 | [uiuxpro_icons.html](./uiuxpro_icons.html) |
+| **首頁** | 專案入口，總覽所有資源 | [點此瀏覽](https://yuanfu8899.github.io/uiuxskillProMax/index.html) |
+| **風格庫** | 58 種 UI 風格詳細展示 | [點此瀏覽](https://yuanfu8899.github.io/uiuxskillProMax/uiuxpro_styles.html) |
+| **配色庫** | 96+ 組產業配色方案 | [點此瀏覽](https://yuanfu8899.github.io/uiuxskillProMax/uiuxpro_colors.html) |
+| **圖示庫** | Lucide 圖示最佳實踐 | [點此瀏覽](https://yuanfu8899.github.io/uiuxskillProMax/uiuxpro_icons.html) |
 
 <details>
 <summary><strong>📂 點擊查看所有 58 個風格範例頁面 (All Style Templates)</strong></summary>
 
 | 編號 | 風格名稱 (Style Name) | 預覽連結 |
 |:---:|:---|:---|
-| 01 | Minimalism | [View](./refstyles/01-minimalism.html) |
-| 02 | Neumorphism | [View](./refstyles/02-neumorphism.html) |
-| 03 | Glassmorphism | [View](./refstyles/03-glassmorphism.html) |
-| 04 | Brutalism | [View](./refstyles/04-brutalism.html) |
-| 05 | 3D Hyperrealism | [View](./refstyles/05-3d-hyperrealism.html) |
-| 06 | Vibrant Block | [View](./refstyles/06-vibrant-block.html) |
-| 07 | Dark Mode OLED | [View](./refstyles/07-dark-mode-oled.html) |
-| 08 | Accessible | [View](./refstyles/08-accessible.html) |
-| 09 | Claymorphism | [View](./refstyles/09-claymorphism.html) |
-| 10 | Aurora UI | [View](./refstyles/10-aurora-ui.html) |
-| 11 | Retro Futurism | [View](./refstyles/11-retro-futurism.html) |
-| 12 | Flat Design | [View](./refstyles/12-flat-design.html) |
-| 13 | Skeuomorphism | [View](./refstyles/13-skeuomorphism.html) |
-| 14 | Liquid Glass | [View](./refstyles/14-liquid-glass.html) |
-| 15 | Motion Driven | [View](./refstyles/15-motion-driven.html) |
-| 16 | Micro Interactions | [View](./refstyles/16-micro-interactions.html) |
-| 17 | Inclusive Design | [View](./refstyles/17-inclusive-design.html) |
-| 18 | Zero Interface | [View](./refstyles/18-zero-interface.html) |
-| 19 | Soft UI Evolution | [View](./refstyles/19-soft-ui-evolution.html) |
-| 20 | Hero Centric | [View](./refstyles/20-hero-centric.html) |
-| 21 | Conversion Optimized | [View](./refstyles/21-conversion-optimized.html) |
-| 22 | Feature Rich | [View](./refstyles/22-feature-rich.html) |
-| 23 | Minimal Direct | [View](./refstyles/23-minimal-direct.html) |
-| 24 | Social Proof | [View](./refstyles/24-social-proof.html) |
-| 25 | Interactive Demo | [View](./refstyles/25-interactive-demo.html) |
-| 26 | Trust Authority | [View](./refstyles/26-trust-authority.html) |
-| 27 | Storytelling | [View](./refstyles/27-storytelling.html) |
-| 28 | Data Dense Dashboard | [View](./refstyles/28-data-dense-dashboard.html) |
-| 29 | Heatmap Density | [View](./refstyles/29-heatmap-density.html) |
-| 30 | Executive Summary | [View](./refstyles/30-executive-summary.html) |
-| 31 | Real Time Monitoring | [View](./refstyles/31-real-time-monitoring.html) |
-| 32 | Drill Down Analytics | [View](./refstyles/32-drill-down-analytics.html) |
-| 33 | Comparative Analytics | [View](./refstyles/33-comparative-analytics.html) |
-| 34 | Predictive Analytics | [View](./refstyles/34-predictive-analytics.html) |
-| 35 | User Behavior Analytics | [View](./refstyles/35-user-behavior-analytics.html) |
-| 36 | Financial Analytics | [View](./refstyles/36-financial-analytics.html) |
-| 37 | Sales Intelligence | [View](./refstyles/37-sales-intelligence.html) |
-| 38 | Neubrutalism | [View](./refstyles/38-neubrutalism.html) |
-| 39 | Bento Box | [View](./refstyles/39-bento-box.html) |
-| 40 | Y2K Revival | [View](./refstyles/40-y2k-revival.html) |
-| 41 | Cyberpunk | [View](./refstyles/41-cyberpunk.html) |
-| 42 | Organic Biophilic | [View](./refstyles/42-organic-biophilic.html) |
-| 43 | AI Native | [View](./refstyles/43-ai-native.html) |
-| 44 | Memphis Revival | [View](./refstyles/44-memphis-revival.html) |
-| 45 | Vaporwave | [View](./refstyles/45-vaporwave.html) |
-| 46 | Dimensional Layering | [View](./refstyles/46-dimensional-layering.html) |
-| 47 | Exaggerated Minimalism | [View](./refstyles/47-exaggerated-minimalism.html) |
-| 48 | Kinetic Typography | [View](./refstyles/48-kinetic-typography.html) |
-| 49 | Parallax Storytelling | [View](./refstyles/49-parallax-storytelling.html) |
-| 50 | Swiss Modernism | [View](./refstyles/50-swiss-modernism.html) |
-| 51 | HUD SciFi | [View](./refstyles/51-hud-scifi.html) |
-| 52 | Pixel Art | [View](./refstyles/52-pixel-art.html) |
-| 53 | Bento Grids | [View](./refstyles/53-bento-grids.html) |
-| 54 | Neubrutalism V2 | [View](./refstyles/54-neubrutalism-v2.html) |
-| 55 | Spatial UI | [View](./refstyles/55-spatial-ui.html) |
-| 56 | E Ink Paper | [View](./refstyles/56-e-ink-paper.html) |
-| 57 | Gen Z Chaos | [View](./refstyles/57-gen-z-chaos.html) |
-| 58 | Biomimetic Organic | [View](./refstyles/58-biomimetic-organic.html) |
+| 01 | Minimalism | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/01-minimalism.html) |
+| 02 | Neumorphism | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/02-neumorphism.html) |
+| 03 | Glassmorphism | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/03-glassmorphism.html) |
+| 04 | Brutalism | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/04-brutalism.html) |
+| 05 | 3D Hyperrealism | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/05-3d-hyperrealism.html) |
+| 06 | Vibrant Block | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/06-vibrant-block.html) |
+| 07 | Dark Mode OLED | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/07-dark-mode-oled.html) |
+| 08 | Accessible | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/08-accessible.html) |
+| 09 | Claymorphism | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/09-claymorphism.html) |
+| 10 | Aurora UI | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/10-aurora-ui.html) |
+| 11 | Retro Futurism | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/11-retro-futurism.html) |
+| 12 | Flat Design | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/12-flat-design.html) |
+| 13 | Skeuomorphism | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/13-skeuomorphism.html) |
+| 14 | Liquid Glass | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/14-liquid-glass.html) |
+| 15 | Motion Driven | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/15-motion-driven.html) |
+| 16 | Micro Interactions | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/16-micro-interactions.html) |
+| 17 | Inclusive Design | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/17-inclusive-design.html) |
+| 18 | Zero Interface | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/18-zero-interface.html) |
+| 19 | Soft UI Evolution | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/19-soft-ui-evolution.html) |
+| 20 | Hero Centric | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/20-hero-centric.html) |
+| 21 | Conversion Optimized | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/21-conversion-optimized.html) |
+| 22 | Feature Rich | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/22-feature-rich.html) |
+| 23 | Minimal Direct | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/23-minimal-direct.html) |
+| 24 | Social Proof | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/24-social-proof.html) |
+| 25 | Interactive Demo | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/25-interactive-demo.html) |
+| 26 | Trust Authority | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/26-trust-authority.html) |
+| 27 | Storytelling | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/27-storytelling.html) |
+| 28 | Data Dense Dashboard | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/28-data-dense-dashboard.html) |
+| 29 | Heatmap Density | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/29-heatmap-density.html) |
+| 30 | Executive Summary | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/30-executive-summary.html) |
+| 31 | Real Time Monitoring | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/31-real-time-monitoring.html) |
+| 32 | Drill Down Analytics | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/32-drill-down-analytics.html) |
+| 33 | Comparative Analytics | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/33-comparative-analytics.html) |
+| 34 | Predictive Analytics | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/34-predictive-analytics.html) |
+| 35 | User Behavior Analytics | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/35-user-behavior-analytics.html) |
+| 36 | Financial Analytics | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/36-financial-analytics.html) |
+| 37 | Sales Intelligence | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/37-sales-intelligence.html) |
+| 38 | Neubrutalism | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/38-neubrutalism.html) |
+| 39 | Bento Box | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/39-bento-box.html) |
+| 40 | Y2K Revival | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/40-y2k-revival.html) |
+| 41 | Cyberpunk | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/41-cyberpunk.html) |
+| 42 | Organic Biophilic | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/42-organic-biophilic.html) |
+| 43 | AI Native | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/43-ai-native.html) |
+| 44 | Memphis Revival | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/44-memphis-revival.html) |
+| 45 | Vaporwave | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/45-vaporwave.html) |
+| 46 | Dimensional Layering | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/46-dimensional-layering.html) |
+| 47 | Exaggerated Minimalism | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/47-exaggerated-minimalism.html) |
+| 48 | Kinetic Typography | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/48-kinetic-typography.html) |
+| 49 | Parallax Storytelling | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/49-parallax-storytelling.html) |
+| 50 | Swiss Modernism | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/50-swiss-modernism.html) |
+| 51 | HUD SciFi | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/51-hud-scifi.html) |
+| 52 | Pixel Art | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/52-pixel-art.html) |
+| 53 | Bento Grids | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/53-bento-grids.html) |
+| 54 | Neubrutalism V2 | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/54-neubrutalism-v2.html) |
+| 55 | Spatial UI | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/55-spatial-ui.html) |
+| 56 | E Ink Paper | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/56-e-ink-paper.html) |
+| 57 | Gen Z Chaos | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/57-gen-z-chaos.html) |
+| 58 | Biomimetic Organic | [Preview](https://yuanfu8899.github.io/uiuxskillProMax/refstyles/58-biomimetic-organic.html) |
 
 </details>
 
@@ -113,8 +113,8 @@
 ### 步驟
 1.  **Clone 專案**
     ```bash
-    git clone https://github.com/your-username/repo-name.git
-    cd repo-name
+    git clone https://github.com/yuanfu8899/uiuxskillProMax.git
+    cd uiuxskillProMax
     ```
 
 2.  **直接運行**
